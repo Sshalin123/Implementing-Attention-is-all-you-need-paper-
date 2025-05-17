@@ -23,3 +23,41 @@ Too high-level and hide the details behind frameworks, or
 Too complex and hard to read for beginners
 
 This project aims to bridge that gap. It focuses on clarity over cleverness. If you're the kind of learner who wants to know how and why things work, you'll feel right at home here.
+
+
+
+
+
+Key Components Explained
+
+
+Scaled Dot-Product Attention
+
+Calculates attention weights using queries, keys, and values.
+
+Scaling by square root of the dimension to prevent softmax from vanishing gradients.
+
+
+Multi-Head Attention
+
+Allows the model to jointly attend to information from multiple representation subspaces at different positions.
+
+
+Positional Encoding
+
+Injects information about the position of tokens in the sequence using sinusoidal functions, as there is no recurrence.
+
+
+Add & Norm
+
+Residual connections followed by layer normalization to stabilize training.
+
+
+Feed-Forward Networks
+
+Position-wise fully connected networks applied to each position independently and identically.
+
+
+Masking
+
+Padding mask and look-ahead mask to prevent attending to future tokens in the decoder during training.
